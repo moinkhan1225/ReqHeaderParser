@@ -22,7 +22,8 @@ app.get('/', function (req, res) {
 // your first API endpoint...
 app.get('/api/whoami', function (req, res) {
   ipAdd=`192.168.137.1`;
-  res.json({ipaddress:ipAdd});
+  res.json({ipaddress:ipAdd,"language":"en-US,en;q=0.5",
+  "software":"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:50.0) Gecko/20100101 Firefox/50.0"});
 });
 
 // listen for requests :)
