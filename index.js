@@ -23,7 +23,7 @@ app.get('/', function (req, res) {
 app.get('/api/whoami', function (req, res) {
   const ipAdd = req.ip;
   const clientLanguage = req.get('Accept-Language');
-  const clientSoftware = req.get('Accept-Software');
+  const clientSoftware = req.get('User-Agent');
 
   res.json({ipaddress:ipAdd,
             language:clientLanguage,
